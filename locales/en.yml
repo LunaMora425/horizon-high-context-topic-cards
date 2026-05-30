@@ -14,7 +14,4 @@ en:
     one: "%{count} reply"
     other: "%{count} replies"
   theme_metadata:
-    description:
-      "Combines categories into groups and structures them like the jcink forum.
-      Based on the discourse-category-groups-component plugin by @awkaiser, but
-      with a different UI and some extra features."
+    description: "A fork of the Discourse theme Horizon's High Context Topic Cards, since the original is only included in the Horizon theme and is not a separate theme component."

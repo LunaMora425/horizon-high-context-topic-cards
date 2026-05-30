@@ -1,0 +1,20 @@
+en:
+  solved: "Solved"
+  unsolved: "Unsolved"
+  posted: "posted"
+  by_username: "by @%{username}"
+  replied: "replied"
+  vote_count:
+    one: "%{count} vote"
+    other: "%{count} votes"
+  views:
+    one: "%{count} view"
+    other: "%{count} views"
+  reply_count:
+    one: "%{count} reply"
+    other: "%{count} replies"
+  theme_metadata:
+    description:
+      "Combines categories into groups and structures them like the jcink forum.
+      Based on the discourse-category-groups-component plugin by @awkaiser, but
+      with a different UI and some extra features."

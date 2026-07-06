@@ -147,10 +147,14 @@ export default class HighContextTopicCard extends Component {
               {{this.topicTimestamp}}
             </span>
             <span class="hc-topic-card__op-name">
-              {{i18n
-                (themePrefix "by_username")
-                username=this.topicCreator.username
-              }}</span>
+              {{#if this.topicCreator.username}}
+                {{i18n
+                  (themePrefix "by_username")
+                  username=this.topicCreator.username
+                }}
+              {{else}}
+                {{i18n (themePrefix "private_reply")}}
+              {{/if}}</span>
           </div>
 
         </div>
@@ -228,9 +232,13 @@ export default class HighContextTopicCard extends Component {
           {{#if this.hasReplies}}
             <div class="hc-topic-card__last-reply">
               {{dAvatar this.lastPoster.user imageSize="tiny"}}
-              <span
-                class="hc-topic-card__last-reply-name"
-              >{{this.lastPoster.username}}</span>
+              <span class="hc-topic-card__last-reply-name">
+                {{~#if this.lastPoster.username~}}
+                  {{this.lastPoster.username}}
+                {{~else~}}
+                  {{i18n (themePrefix "private_reply")}}
+                {{~/if~}}
+              </span>
               <span>{{i18n (themePrefix "replied")}}</span>
               <span class="hc-topic-card__time">
                 {{dFormatDate @topic.bumpedAt leaveAgo="true"}}

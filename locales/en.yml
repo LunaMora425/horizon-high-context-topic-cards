@@ -3,6 +3,7 @@ en:
   unsolved: "Unsolved"
   posted: "posted"
   by_username: "by @%{username}"
+  private_reply: "PRIVATE REPLY"
   replied: "replied"
   vote_count:
     one: "%{count} vote"

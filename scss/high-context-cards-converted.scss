@@ -19,7 +19,7 @@
 
 .topic-list-item.--high-context {
   display: block;
-  background: var(--header_background);
+  background: var(--bm-surface-2, var(--header_background));
   padding: 0;
 
   &.closed {
@@ -152,12 +152,13 @@
       color: var(--danger);
     }
 
+    // Sits on the warm brand accent: mode-invariant cream + dark outline.
     &.--unread {
       background-color: var(--quaternary);
       border: 2px solid var(--color-quaternary-shadow);
       border-radius: 30px;
       box-shadow: var(--color-quaternary-shadow) 2px 2px 0 0;
-      color: var(--primary);
+      color: var(--bm-ribbon-text, #d4be9f);
       text-shadow:
         1px 1px 2px #000,
         -1px -1px 2px #000,

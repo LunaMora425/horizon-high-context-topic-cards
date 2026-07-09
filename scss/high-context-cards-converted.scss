@@ -48,7 +48,7 @@
   @media screen and (max-width: 766px) {
     border: 2px dotted
       var(--color-tertiary-shadow, var(--bm-accent-shadow, var(--primary-low-mid)));
-    border-radius: var(--sublime-border-radius);
+    border-radius: var(--sublime-border-radius, var(--d-border-radius));
     margin: 3px 0;
   }
 

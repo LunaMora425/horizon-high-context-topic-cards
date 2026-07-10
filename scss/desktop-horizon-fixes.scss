@@ -1,8 +1,8 @@
+// Bulk select fix (desktop only).
 .topic-list .topic-list-header .topic-list-data:last-of-type {
   padding: 0;
 }
 
-// Fixing bulk select (only needed for desktop)
 .bulk-select-enabled {
   body:not(.user-messages-page) & {
     .topic-list-header {

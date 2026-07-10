@@ -1,13 +1,4 @@
-// Converted from Horizon's high-context-cards.scss
-// Changes from original:
-//   - Removed @use "lib/viewport" (Horizon-internal SCSS lib)
-//   - Replaced viewport.from(sm) with @media screen and (min-width: 767px)
-//   - Replaced viewport.until(sm) with @media screen and (max-width: 766px)
-//   - Inlined $padding-pills-small → var(--space-half) var(--space-2)
-//   - --topic-card-shadow is a Horizon variable; define it below or remove the .selected rule
-
-// :root { --topic-card-shadow: rgba(0, 0, 0, 0.15); }
-
+// Converted from Horizon's high-context-cards.scss.
 .topic-list-body:has(.--high-context) {
   --title-color--read: var(--primary-700);
   --topic-title-font-weight--visited: 600;
@@ -155,9 +146,6 @@
       color: var(--danger);
     }
 
-    // Quaternary accent family: bg flips per mode, so border/shadow use the
-    // scheme-aware quaternary pairing (--bm-accent2-shadow). Lettering stays
-    // brand-furniture (cream + dark outline) — quaternary is dark in both modes.
     &.--unread {
       background-color: var(--quaternary);
       border: 2px solid var(--bm-accent2-shadow, var(--color-quaternary-shadow));
@@ -335,7 +323,7 @@
     }
 
     &::-webkit-scrollbar {
-      display: none; // Chrome/Safari
+      display: none;
     }
   }
 

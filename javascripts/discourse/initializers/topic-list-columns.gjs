@@ -163,7 +163,6 @@ export default {
         }
       );
 
-      // Disable mobile layout for topic card contexts
       api.registerValueTransformer(
         "topic-list-item-mobile-layout",
         ({ value, context }) => {
@@ -204,7 +203,6 @@ export default {
             .querySelector("a.raw-topic-link");
 
           if (event.button === 1) {
-            // click events with button=1 can't naturally trigger browser navigation
             window.open(topicLink.href, "_blank", "noopener,noreferrer");
             return;
           }

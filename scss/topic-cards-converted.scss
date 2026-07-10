@@ -48,7 +48,6 @@
   }
 }
 
-// undo all the above for the few instances that arent styled like traditional badges
 .category-text-title {
   .badge-category__wrapper {
     border-radius: 0;
@@ -198,7 +197,7 @@
   .link-top-line {
     grid-area: title;
     font-weight: 500;
-    line-height: calc(var(--space-3) * 2); // avatar sizing
+    line-height: calc(var(--space-3) * 2);
 
     @media screen and (max-width: 766px) {
       line-height: normal;
@@ -435,7 +434,6 @@
     display: none;
   }
 
-  // metadata - likes and replies
   td.posts .badge-posts {
     grid-area: replies;
     align-self: center;
@@ -639,7 +637,6 @@
   }
 }
 
-// bulk-select overrule for j/k nav
 .topic-list tr.selected td:first-of-type,
 .topic-list-item.selected td:first-of-type {
   box-shadow: none;

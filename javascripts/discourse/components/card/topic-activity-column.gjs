@@ -12,13 +12,6 @@ export default class TopicActivityColumn extends Component {
       )
       .asDays();
 
-    // If the bumped + last posted at are close together,
-    // then we assume someone is editing shortly after posting,
-    // in which case we should just show the last poster/first poster
-    // as normal.
-    //
-    // In other cases, it's likely an edit or a topic bump that happened
-    // a while after the last post, so we show no user.
     if (
       moment(this.args.topic.bumped_at).isAfter(
         this.args.topic.last_posted_at

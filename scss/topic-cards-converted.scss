@@ -14,6 +14,12 @@
   );
 }
 
+// The All/Topics/Replies toggle sits flush against the first card, which has
+// its own border. Only space it when a card-mode list actually follows.
+.topic-replies-toggle-wrapper:has(~ table.topic-list.--d-topic-cards) {
+  margin-block-end: var(--space-4);
+}
+
 .topic-list.--d-topic-cards .topic-list-header .topic-list-data {
   max-width: unset;
 }
